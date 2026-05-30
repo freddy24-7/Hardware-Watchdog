@@ -4,6 +4,7 @@ use rdkafka::{
 };
 use thiserror::Error;
 
+use crate::config::Config;
 use crate::metrics::MetricsSnapshot;
 
 #[derive(Debug, Error)]
@@ -24,21 +25,36 @@ pub struct MetricsProducer {
 }
 
 impl MetricsProducer {
-    pub fn new(brokers: &str, topic: &str) -> Result<Self, ProducerError> {
-        let inner = ClientConfig::new()
-            .set("bootstrap.servers", brokers)
-            // At-least-once: wait for the leader to acknowledge before returning
+    pub fn new(cfg: &Config) -> Result<Self, ProducerError> {
+        let mut client_config = ClientConfig::new();
+        client_config
+            .set("bootstrap.servers", &cfg.kafka_brokers)
+            // At-least-once: wait for leader acknowledgement before returning
             .set("acks", "1")
             // Retry up to 5 times on transient send failures
             .set("retries", "5")
             .set("retry.backoff.ms", "500")
             .set("message.timeout.ms", "10000")
+            .set("security.protocol", &cfg.kafka_security_protocol);
+
+        // Apply SASL settings only when credentials are provided
+        if let (Some(username), Some(password)) = (
+            cfg.kafka_sasl_username.as_deref(),
+            cfg.kafka_sasl_password.as_deref(),
+        ) {
+            client_config
+                .set("sasl.mechanisms", &cfg.kafka_sasl_mechanism)
+                .set("sasl.username", username)
+                .set("sasl.password", password);
+        }
+
+        let inner = client_config
             .create::<FutureProducer>()
             .map_err(ProducerError::Creation)?;
 
         Ok(Self {
             inner,
-            topic: topic.to_owned(),
+            topic: cfg.kafka_topic.clone(),
         })
     }
 
