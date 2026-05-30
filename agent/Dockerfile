@@ -32,7 +32,8 @@ COPY agent/src agent/src
 RUN touch agent/src/main.rs && cargo build --release -p agent
 
 # ── Stage 2: Runtime ──────────────────────────────────────────────────────────
-FROM debian:bookworm-slim
+# ubuntu:24.04 ships glibc 2.39 which satisfies the builder's GLIBC_2.38 requirement
+FROM ubuntu:24.04
 
 RUN apt-get update && apt-get install -y \
     libssl3 \

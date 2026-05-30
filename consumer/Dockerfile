@@ -26,7 +26,7 @@ COPY consumer/src consumer/src
 RUN touch consumer/src/main.rs && cargo build --release -p consumer
 
 # ── Stage 2: Runtime ──────────────────────────────────────────────────────────
-FROM debian:bookworm-slim
+FROM ubuntu:24.04
 
 RUN apt-get update && apt-get install -y \
     libssl3 \

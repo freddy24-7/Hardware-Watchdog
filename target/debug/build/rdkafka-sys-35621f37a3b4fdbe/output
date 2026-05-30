@@ -1,0 +1,43 @@
+Configuring and compiling librdkafka
+CMAKE_TOOLCHAIN_FILE_aarch64-unknown-linux-gnu = None
+CMAKE_TOOLCHAIN_FILE_aarch64_unknown_linux_gnu = None
+HOST_CMAKE_TOOLCHAIN_FILE = None
+CMAKE_TOOLCHAIN_FILE = None
+CMAKE_GENERATOR_aarch64-unknown-linux-gnu = None
+CMAKE_GENERATOR_aarch64_unknown_linux_gnu = None
+HOST_CMAKE_GENERATOR = None
+CMAKE_GENERATOR = None
+CMAKE_PREFIX_PATH_aarch64-unknown-linux-gnu = None
+CMAKE_PREFIX_PATH_aarch64_unknown_linux_gnu = None
+HOST_CMAKE_PREFIX_PATH = None
+CMAKE_PREFIX_PATH = None
+CMAKE_aarch64-unknown-linux-gnu = None
+CMAKE_aarch64_unknown_linux_gnu = None
+HOST_CMAKE = None
+CMAKE = None
+-- Found Zstd: /usr/lib/aarch64-linux-gnu/libzstd.so
+-- Checking for module 'libsasl2'
+--   Package 'libsasl2', required by 'virtual:world', not found
+-- Configuring done (4.5s)
+-- Generating done (0.2s)
+-- Build files have been written to: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build
+[ 86%] Built target rdkafka
+[100%] Built target rdkafka++
+Install the project...
+-- Install configuration: "Debug"
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/lib/cmake/RdKafka/RdKafkaConfig.cmake
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/lib/cmake/RdKafka/RdKafkaConfigVersion.cmake
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/lib/cmake/RdKafka/FindLZ4.cmake
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/lib/cmake/RdKafka/RdKafkaTargets.cmake
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/lib/cmake/RdKafka/RdKafkaTargets-debug.cmake
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/share/licenses/librdkafka/LICENSES.txt
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/lib/pkgconfig/rdkafka-static.pc
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/lib/librdkafka.a
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/include/librdkafka/rdkafka.h
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/include/librdkafka/rdkafka_mock.h
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/lib/pkgconfig/rdkafka++-static.pc
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/lib/librdkafka++.a
+-- Up-to-date: /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/include/librdkafka/rdkafkacpp.h
+cargo:root=/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out
+cargo:rustc-link-search=native=/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/lib
+cargo:rustc-link-lib=static=rdkafka

@@ -1,0 +1,1358 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 6.12.76-linuxkit - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: -ffunction-sections;-fdata-sections;-fPIC;-w
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: -ffunction-sections;-fdata-sections;-fPIC;-w
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-FdvCyz"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-FdvCyz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-FdvCyz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e7d66/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e7d66.dir/build.make CMakeFiles/cmTC_e7d66.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-FdvCyz'
+        Building C object CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w    -v -o CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e7d66.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e7d66.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -w -version -ffunction-sections -fdata-sections -fPIC -fasynchronous-unwind-tables -o /tmp/cc69zz3n.s
+        GNU C17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-linux-gnu/14/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 07cded30d2a9b3cda97e4b164823fd45
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e7d66.dir/'
+         as -v -W -EL -mabi=lp64 -o CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o /tmp/cc69zz3n.s
+        GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e7d66
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7d66.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'cmTC_e7d66' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e7d66.'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0gDUM9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_e7d66 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        collect2 version 14.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0gDUM9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_e7d66 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'cmTC_e7d66' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e7d66.'
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w   -v -Wl,-v CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o -o cmTC_e7d66
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-FdvCyz'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/14/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/aarch64-linux-gnu/14/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-FdvCyz']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e7d66/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e7d66.dir/build.make CMakeFiles/cmTC_e7d66.dir/build]
+        ignore line: [gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-FdvCyz']
+        ignore line: [Building C object CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w    -v -o CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e7d66.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e7d66.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -w -version -ffunction-sections -fdata-sections -fPIC -fasynchronous-unwind-tables -o /tmp/cc69zz3n.s]
+        ignore line: [GNU C17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 07cded30d2a9b3cda97e4b164823fd45]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e7d66.dir/']
+        ignore line: [ as -v -W -EL -mabi=lp64 -o CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o /tmp/cc69zz3n.s]
+        ignore line: [GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_e7d66]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7d66.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'cmTC_e7d66' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e7d66.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0gDUM9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_e7d66 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc0gDUM9.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e7d66] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0gDUM9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_e7d66 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e7d66.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14] ==> [/usr/lib/gcc/aarch64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/14;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-h3RxOx"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-h3RxOx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-h3RxOx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e3003/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e3003.dir/build.make CMakeFiles/cmTC_e3003.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-h3RxOx'
+        Building CXX object CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -ffunction-sections -fdata-sections -fPIC -w    -v -o CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e3003.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e3003.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -w -version -ffunction-sections -fdata-sections -fPIC -fasynchronous-unwind-tables -o /tmp/cc9lVl2g.s
+        GNU C++17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/14"
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/14
+         /usr/include/aarch64-linux-gnu/c++/14
+         /usr/include/c++/14/backward
+         /usr/lib/gcc/aarch64-linux-gnu/14/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: b3582c6e46343b7ca116e1e8d6c2f0f8
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e3003.dir/'
+         as -v -W -EL -mabi=lp64 -o CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc9lVl2g.s
+        GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_e3003
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3003.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'cmTC_e3003' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e3003.'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cccfeCdr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_e3003 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        collect2 version 14.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cccfeCdr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_e3003 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'cmTC_e3003' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e3003.'
+        /usr/bin/c++  -ffunction-sections -fdata-sections -fPIC -w   -v -Wl,-v CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e3003
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-h3RxOx'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/14]
+          add: [/usr/include/aarch64-linux-gnu/c++/14]
+          add: [/usr/include/c++/14/backward]
+          add: [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/14] ==> [/usr/include/c++/14]
+        collapse include dir [/usr/include/aarch64-linux-gnu/c++/14] ==> [/usr/include/aarch64-linux-gnu/c++/14]
+        collapse include dir [/usr/include/c++/14/backward] ==> [/usr/include/c++/14/backward]
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/14/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14;/usr/include/aarch64-linux-gnu/c++/14;/usr/include/c++/14/backward;/usr/lib/gcc/aarch64-linux-gnu/14/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-h3RxOx']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e3003/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e3003.dir/build.make CMakeFiles/cmTC_e3003.dir/build]
+        ignore line: [gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-h3RxOx']
+        ignore line: [Building CXX object CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -ffunction-sections -fdata-sections -fPIC -w    -v -o CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e3003.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e3003.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -w -version -ffunction-sections -fdata-sections -fPIC -fasynchronous-unwind-tables -o /tmp/cc9lVl2g.s]
+        ignore line: [GNU C++17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/14"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/14]
+        ignore line: [ /usr/include/aarch64-linux-gnu/c++/14]
+        ignore line: [ /usr/include/c++/14/backward]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: b3582c6e46343b7ca116e1e8d6c2f0f8]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e3003.dir/']
+        ignore line: [ as -v -W -EL -mabi=lp64 -o CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc9lVl2g.s]
+        ignore line: [GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_e3003]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3003.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-ffunction-sections' '-fdata-sections' '-fPIC' '-w' '-v' '-o' 'cmTC_e3003' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e3003.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cccfeCdr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_e3003 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cccfeCdr.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e3003] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cccfeCdr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_e3003 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_e3003.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14] ==> [/usr/lib/gcc/aarch64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/14;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "CMakeLists.txt:37 (check_library_exists)"
+    checks:
+      - "Looking for pow in m"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-zGlVaU"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-zGlVaU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "WITH_HDRHISTOGRAM"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-zGlVaU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_88405/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_88405.dir/build.make CMakeFiles/cmTC_88405.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-zGlVaU'
+        Building C object CMakeFiles/cmTC_88405.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w -DCHECK_FUNCTION_EXISTS=pow -o CMakeFiles/cmTC_88405.dir/CheckFunctionExists.c.o -c /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-zGlVaU/CheckFunctionExists.c
+        Linking C executable cmTC_88405
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88405.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w -DCHECK_FUNCTION_EXISTS=pow CMakeFiles/cmTC_88405.dir/CheckFunctionExists.c.o -o cmTC_88405  -lm
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-zGlVaU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "CMakeLists.txt:83 (try_compile)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "WITH_LIBDL"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e7dea/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e7dea.dir/build.make CMakeFiles/cmTC_e7dea.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_e7dea.dir/dlopen_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_e7dea.dir/dlopen_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/dlopen_test.c
+        Linking C executable cmTC_e7dea
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7dea.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_e7dea.dir/dlopen_test.c.o -o cmTC_e7dea  -ldl
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "CMakeLists.txt:132 (try_compile)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "WITH_SASL_CYRUS_BOOL"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_923af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_923af.dir/build.make CMakeFiles/cmTC_923af.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_923af.dir/libsasl2_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_923af.dir/libsasl2_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/libsasl2_test.c
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/libsasl2_test.c:2:10: fatal error: sasl/sasl.h: No such file or directory
+            2 | #include <sasl/sasl.h>
+              |          ^~~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_923af.dir/build.make:81: CMakeFiles/cmTC_923af.dir/libsasl2_test.c.o] Error 1
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:134: cmTC_923af/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:1 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4117d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4117d.dir/build.make CMakeFiles/cmTC_4117d.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_4117d.dir/regex_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_4117d.dir/regex_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/regex_test.c
+        Linking C executable cmTC_4117d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4117d.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_4117d.dir/regex_test.c.o -o cmTC_4117d
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:7 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_STRNDUP"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_70464/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_70464.dir/build.make CMakeFiles/cmTC_70464.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_70464.dir/strndup_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_70464.dir/strndup_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/strndup_test.c
+        Linking C executable cmTC_70464
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70464.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_70464.dir/strndup_test.c.o -o cmTC_70464
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:13 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_RAND_R"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e8093/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e8093.dir/build.make CMakeFiles/cmTC_e8093.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_e8093.dir/rand_r_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_e8093.dir/rand_r_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/rand_r_test.c
+        Linking C executable cmTC_e8093
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8093.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_e8093.dir/rand_r_test.c.o -o cmTC_e8093
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:19 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_PTHREAD_SETNAME_GNU"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0e8c3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0e8c3.dir/build.make CMakeFiles/cmTC_0e8c3.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_0e8c3.dir/pthread_setname_gnu_test.c.o
+        /usr/bin/cc -D_GNU_SOURCE  -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_0e8c3.dir/pthread_setname_gnu_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_gnu_test.c
+        Linking C executable cmTC_0e8c3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e8c3.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_0e8c3.dir/pthread_setname_gnu_test.c.o -o cmTC_0e8c3  -lpthread
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:27 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_PTHREAD_SETNAME_DARWIN"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_72839/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_72839.dir/build.make CMakeFiles/cmTC_72839.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_72839.dir/pthread_setname_darwin_test.c.o
+        /usr/bin/cc -D_DARWIN_C_SOURCE  -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_72839.dir/pthread_setname_darwin_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_darwin_test.c
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_darwin_test.c: In function 'main':
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_darwin_test.c:4:9: error: implicit declaration of function 'pthread_setname_np'; did you mean 'pthread_setcanceltype'? [-Wimplicit-function-declaration]
+            4 |         pthread_setname_np("abc");
+              |         ^~~~~~~~~~~~~~~~~~
+              |         pthread_setcanceltype
+        gmake[1]: *** [CMakeFiles/cmTC_72839.dir/build.make:81: CMakeFiles/cmTC_72839.dir/pthread_setname_darwin_test.c.o] Error 1
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:134: cmTC_72839/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:35 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_PTHREAD_SETNAME_FREEBSD"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_17219/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_17219.dir/build.make CMakeFiles/cmTC_17219.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_17219.dir/pthread_setname_freebsd_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_17219.dir/pthread_setname_freebsd_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_freebsd_test.c
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_freebsd_test.c:2:10: fatal error: pthread_np.h: No such file or directory
+            2 | #include <pthread_np.h>
+              |          ^~~~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_17219.dir/build.make:81: CMakeFiles/cmTC_17219.dir/pthread_setname_freebsd_test.c.o] Error 1
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:134: cmTC_17219/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:47 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "_atomics_32"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_82dd2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_82dd2.dir/build.make CMakeFiles/cmTC_82dd2.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_82dd2.dir/atomic_32_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_82dd2.dir/atomic_32_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/atomic_32_test.c
+        Linking C executable cmTC_82dd2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82dd2.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_82dd2.dir/atomic_32_test.c.o -o cmTC_82dd2
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:79 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "_atomics_64"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5a1a2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5a1a2.dir/build.make CMakeFiles/cmTC_5a1a2.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_5a1a2.dir/atomic_64_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_5a1a2.dir/atomic_64_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/atomic_64_test.c
+        Linking C executable cmTC_5a1a2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a1a2.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_5a1a2.dir/atomic_64_test.c.o -o cmTC_5a1a2
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:108 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "WITH_C11THREADS"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8220d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8220d.dir/build.make CMakeFiles/cmTC_8220d.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_8220d.dir/c11threads_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_8220d.dir/c11threads_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/c11threads_test.c
+        Linking C executable cmTC_8220d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8220d.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_8220d.dir/c11threads_test.c.o -o cmTC_8220d  -pthread
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:117 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "WITH_CRC32C_HW"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7d827/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7d827.dir/build.make CMakeFiles/cmTC_7d827.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_7d827.dir/crc32c_hw_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_7d827.dir/crc32c_hw_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/crc32c_hw_test.c
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/crc32c_hw_test.c: In function 'main':
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/crc32c_hw_test.c:10:9: error: unknown register name '%edx' in 'asm'
+           10 |         __asm__("cpuid" : "=c"(ecx) : "a"(eax) : "%ebx", "%edx");
+              |         ^~~~~~~
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/crc32c_hw_test.c:10:9: error: unknown register name '%ebx' in 'asm'
+        gmake[1]: *** [CMakeFiles/cmTC_7d827.dir/build.make:81: CMakeFiles/cmTC_7d827.dir/crc32c_hw_test.c.o] Error 1
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:134: cmTC_7d827/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "src/CMakeLists.txt:255 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-L3RZMD"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-L3RZMD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-L3RZMD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_58558/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_58558.dir/build.make CMakeFiles/cmTC_58558.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-L3RZMD'
+        Building C object CMakeFiles/cmTC_58558.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -ffunction-sections -fdata-sections -fPIC -w  -fPIE -o CMakeFiles/cmTC_58558.dir/src.c.o -c /build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-L3RZMD/src.c
+        Linking C executable cmTC_58558
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58558.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_58558.dir/src.c.o -o cmTC_58558
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/CMakeFiles/CMakeScratch/TryCompile-L3RZMD'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "CMakeLists.txt:83 (try_compile)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "WITH_LIBDL"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b10df/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b10df.dir/build.make CMakeFiles/cmTC_b10df.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_b10df.dir/dlopen_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_b10df.dir/dlopen_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/dlopen_test.c
+        Linking C executable cmTC_b10df
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b10df.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_b10df.dir/dlopen_test.c.o -o cmTC_b10df  -ldl
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "CMakeLists.txt:132 (try_compile)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "WITH_SASL_CYRUS_BOOL"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b33e0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b33e0.dir/build.make CMakeFiles/cmTC_b33e0.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_b33e0.dir/libsasl2_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_b33e0.dir/libsasl2_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/libsasl2_test.c
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/libsasl2_test.c:2:10: fatal error: sasl/sasl.h: No such file or directory
+            2 | #include <sasl/sasl.h>
+              |          ^~~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_b33e0.dir/build.make:81: CMakeFiles/cmTC_b33e0.dir/libsasl2_test.c.o] Error 1
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:134: cmTC_b33e0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:1 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b5dfe/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b5dfe.dir/build.make CMakeFiles/cmTC_b5dfe.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_b5dfe.dir/regex_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_b5dfe.dir/regex_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/regex_test.c
+        Linking C executable cmTC_b5dfe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5dfe.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_b5dfe.dir/regex_test.c.o -o cmTC_b5dfe
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:7 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_STRNDUP"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fd509/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fd509.dir/build.make CMakeFiles/cmTC_fd509.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_fd509.dir/strndup_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_fd509.dir/strndup_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/strndup_test.c
+        Linking C executable cmTC_fd509
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd509.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_fd509.dir/strndup_test.c.o -o cmTC_fd509
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:13 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_RAND_R"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f397b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f397b.dir/build.make CMakeFiles/cmTC_f397b.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_f397b.dir/rand_r_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_f397b.dir/rand_r_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/rand_r_test.c
+        Linking C executable cmTC_f397b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f397b.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_f397b.dir/rand_r_test.c.o -o cmTC_f397b
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:19 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_PTHREAD_SETNAME_GNU"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5f19e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5f19e.dir/build.make CMakeFiles/cmTC_5f19e.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_5f19e.dir/pthread_setname_gnu_test.c.o
+        /usr/bin/cc -D_GNU_SOURCE  -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_5f19e.dir/pthread_setname_gnu_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_gnu_test.c
+        Linking C executable cmTC_5f19e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f19e.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_5f19e.dir/pthread_setname_gnu_test.c.o -o cmTC_5f19e  -lpthread
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:27 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_PTHREAD_SETNAME_DARWIN"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_310ef/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_310ef.dir/build.make CMakeFiles/cmTC_310ef.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_310ef.dir/pthread_setname_darwin_test.c.o
+        /usr/bin/cc -D_DARWIN_C_SOURCE  -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_310ef.dir/pthread_setname_darwin_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_darwin_test.c
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_darwin_test.c: In function 'main':
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_darwin_test.c:4:9: error: implicit declaration of function 'pthread_setname_np'; did you mean 'pthread_setcanceltype'? [-Wimplicit-function-declaration]
+            4 |         pthread_setname_np("abc");
+              |         ^~~~~~~~~~~~~~~~~~
+              |         pthread_setcanceltype
+        gmake[1]: *** [CMakeFiles/cmTC_310ef.dir/build.make:81: CMakeFiles/cmTC_310ef.dir/pthread_setname_darwin_test.c.o] Error 1
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:134: cmTC_310ef/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:35 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "HAVE_PTHREAD_SETNAME_FREEBSD"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4a20c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4a20c.dir/build.make CMakeFiles/cmTC_4a20c.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_4a20c.dir/pthread_setname_freebsd_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_4a20c.dir/pthread_setname_freebsd_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_freebsd_test.c
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/pthread_setname_freebsd_test.c:2:10: fatal error: pthread_np.h: No such file or directory
+            2 | #include <pthread_np.h>
+              |          ^~~~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_4a20c.dir/build.make:81: CMakeFiles/cmTC_4a20c.dir/pthread_setname_freebsd_test.c.o] Error 1
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:134: cmTC_4a20c/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:47 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "_atomics_32"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8644e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8644e.dir/build.make CMakeFiles/cmTC_8644e.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_8644e.dir/atomic_32_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_8644e.dir/atomic_32_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/atomic_32_test.c
+        Linking C executable cmTC_8644e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8644e.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_8644e.dir/atomic_32_test.c.o -o cmTC_8644e
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:79 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "_atomics_64"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b15c7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b15c7.dir/build.make CMakeFiles/cmTC_b15c7.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_b15c7.dir/atomic_64_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_b15c7.dir/atomic_64_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/atomic_64_test.c
+        Linking C executable cmTC_b15c7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b15c7.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_b15c7.dir/atomic_64_test.c.o -o cmTC_b15c7
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:108 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "WITH_C11THREADS"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d6aa4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d6aa4.dir/build.make CMakeFiles/cmTC_d6aa4.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_d6aa4.dir/c11threads_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_d6aa4.dir/c11threads_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/c11threads_test.c
+        Linking C executable cmTC_d6aa4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6aa4.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -w  CMakeFiles/cmTC_d6aa4.dir/c11threads_test.c.o -o cmTC_d6aa4  -pthread
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "packaging/cmake/try_compile/rdkafka_setup.cmake:117 (try_compile)"
+      - "CMakeLists.txt:204 (include)"
+    directories:
+      source: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+      binary: "/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC -w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/Modules/"
+    buildResult:
+      variable: "WITH_CRC32C_HW"
+      cached: true
+      stdout: |
+        Change Dir: '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8a834/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8a834.dir/build.make CMakeFiles/cmTC_8a834.dir/build
+        gmake[1]: Entering directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_8a834.dir/crc32c_hw_test.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -w  -o CMakeFiles/cmTC_8a834.dir/crc32c_hw_test.c.o -c /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/crc32c_hw_test.c
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/crc32c_hw_test.c: In function 'main':
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/crc32c_hw_test.c:10:9: error: unknown register name '%edx' in 'asm'
+           10 |         __asm__("cpuid" : "=c"(ecx) : "a"(eax) : "%ebx", "%edx");
+              |         ^~~~~~~
+        /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rdkafka-sys-4.10.0+2.12.1/librdkafka/packaging/cmake/try_compile/crc32c_hw_test.c:10:9: error: unknown register name '%ebx' in 'asm'
+        gmake[1]: *** [CMakeFiles/cmTC_8a834.dir/build.make:81: CMakeFiles/cmTC_8a834.dir/crc32c_hw_test.c.o] Error 1
+        gmake[1]: Leaving directory '/build/target/debug/build/rdkafka-sys-35621f37a3b4fdbe/out/build/try_compile/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:134: cmTC_8a834/fast] Error 2
+        
+      exitCode: 2
+...
