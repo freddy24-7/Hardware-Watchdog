@@ -1,0 +1,21 @@
+apiVersion: 1
+
+datasources:
+  - name: Hardware Watchdog PostgreSQL
+    type: postgres
+    isDefault: true
+    # Host references the Docker Compose service name — never localhost
+    url: "${GF_DATABASE_HOST:-postgres}:${GF_DATABASE_PORT:-5432}"
+    database: "${POSTGRES_DB:-watchdog}"
+    user: "${POSTGRES_USER:-watchdog}"
+    secureJsonData:
+      password: "${POSTGRES_PASSWORD:-watchdog}"
+    jsonData:
+      sslmode: disable
+      maxOpenConns: 10
+      maxIdleConns: 5
+      connMaxLifetime: 14400
+      postgresVersion: 1600
+      timescaledb: false
+    # Immutable infra: prevent ad-hoc UI changes from diverging from version control
+    editable: false
