@@ -34,13 +34,11 @@ async fn main() -> anyhow::Result<()> {
     let mut interval =
         tokio::time::interval(std::time::Duration::from_secs(cfg.metrics_interval_secs));
 
-    // Wait for either the next tick or a shutdown signal
-    let shutdown = async {
+    let mut shutdown = std::pin::pin!(async {
         tokio::signal::ctrl_c()
             .await
-            .expect("failed to install CTRL+C handler");
-    };
-    tokio::pin!(shutdown);
+            .context("failed to install CTRL+C handler")
+    });
 
     tracing::info!(
         "agent ready — collecting metrics every {}s",
@@ -68,7 +66,8 @@ async fn main() -> anyhow::Result<()> {
                     }
                 }
             }
-            _ = &mut shutdown => {
+            result = &mut shutdown => {
+                result?;
                 tracing::info!("shutdown signal received — exiting");
                 break;
             }
