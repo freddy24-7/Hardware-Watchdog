@@ -22,8 +22,8 @@ async fn main() -> anyhow::Result<()> {
         "agent starting"
     );
 
-    let producer = producer::MetricsProducer::new(&cfg.kafka_brokers, &cfg.kafka_topic)
-        .context("failed to create Kafka producer")?;
+    let producer =
+        producer::MetricsProducer::new(&cfg).context("failed to create Kafka producer")?;
 
     let mut collector =
         metrics::Collector::new().context("failed to initialise metrics collector")?;
