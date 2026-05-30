@@ -5,11 +5,11 @@ datasources:
     type: postgres
     isDefault: true
     # Host references the Docker Compose service name — never localhost
-    url: "${GF_DATABASE_HOST:-postgres}:${GF_DATABASE_PORT:-5432}"
-    database: "${POSTGRES_DB:-watchdog}"
-    user: "${POSTGRES_USER:-watchdog}"
+    url: postgres:5432
+    database: watchdog
+    user: watchdog
     secureJsonData:
-      password: "${POSTGRES_PASSWORD:-watchdog}"
+      password: watchdog
     jsonData:
       sslmode: disable
       maxOpenConns: 10
