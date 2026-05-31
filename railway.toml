@@ -1,0 +1,8 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "consumer/Dockerfile"
+
+[deploy]
+startCommand = "/usr/local/bin/consumer"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
