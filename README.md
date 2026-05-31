@@ -13,8 +13,14 @@ the data in real time with a per-machine dashboard.
 curl -fsSL https://raw.githubusercontent.com/freddy24-7/Hardware-Watchdog/main/install.sh | bash
 ```
 
-This installs the agent binary, generates a stable machine ID, and prints your personal
-Grafana URL. Open the URL, start the agent, and watch your own CPU/memory/disk data appear.
+This detects your platform, downloads the agent binary, and prints two things:
+
+1. **A start command** — run it in your terminal to begin sending metrics
+2. **Your personal Grafana URL** — open it to see your own CPU, memory, and disk data live
+
+Log in to Grafana with `admin` / `watchdog2024`. Keep the agent running while you watch the dashboard update every 5 seconds.
+
+> Supports macOS (Apple Silicon) and Linux (x86_64).
 
 ---
 
