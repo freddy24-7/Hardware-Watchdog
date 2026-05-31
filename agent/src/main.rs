@@ -7,7 +7,6 @@ use tracing_subscriber::{fmt, EnvFilter};
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
-    // JSON logging in production; RUST_LOG controls the filter level
     fmt()
         .json()
         .with_env_filter(EnvFilter::from_default_env())
@@ -16,17 +15,17 @@ async fn main() -> anyhow::Result<()> {
     let cfg: config::Config = envy::from_env().context("failed to load config from environment")?;
 
     tracing::info!(
-        brokers = %cfg.kafka_brokers,
-        topic = %cfg.kafka_topic,
+        ingest_url = %cfg.ingest_url,
         interval_secs = cfg.metrics_interval_secs,
         "agent starting"
     );
 
-    let producer =
-        producer::MetricsProducer::new(&cfg).context("failed to create Kafka producer")?;
+    let producer = producer::MetricsProducer::new(cfg.ingest_url.clone());
 
     let mut collector =
         metrics::Collector::new().context("failed to initialise metrics collector")?;
+
+    tracing::info!(machine_id = %collector.machine_id(), "machine ID assigned");
 
     // First collect is a warm-up; sysinfo needs two samples to compute CPU delta
     let _ = collector.collect();
@@ -58,7 +57,7 @@ async fn main() -> anyhow::Result<()> {
                             "metric collected"
                         );
                         if let Err(e) = producer.send(&snapshot).await {
-                            tracing::error!(error = %e, "failed to publish snapshot");
+                            tracing::error!(error = %e, "failed to send snapshot");
                         }
                     }
                     Err(e) => {

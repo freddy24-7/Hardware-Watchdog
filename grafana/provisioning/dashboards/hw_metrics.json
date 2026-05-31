@@ -112,7 +112,7 @@
           "editorMode": "code",
           "format": "time_series",
           "rawQuery": true,
-          "rawSql": "SELECT collected_at AS time, cpu_pct AS \"CPU %\" FROM hw_metrics WHERE $__timeFilter(collected_at) ORDER BY collected_at",
+          "rawSql": "SELECT collected_at AS time, cpu_pct AS \"CPU %\" FROM hw_metrics WHERE $__timeFilter(collected_at) AND machine_id = '$machine_id' ORDER BY collected_at",
           "refId": "A",
           "sql": {
             "columns": [],
@@ -219,7 +219,7 @@
           "editorMode": "code",
           "format": "time_series",
           "rawQuery": true,
-          "rawSql": "SELECT collected_at AS time, memory_pct AS \"Memory %\" FROM hw_metrics WHERE $__timeFilter(collected_at) ORDER BY collected_at",
+          "rawSql": "SELECT collected_at AS time, memory_pct AS \"Memory %\" FROM hw_metrics WHERE $__timeFilter(collected_at) AND machine_id = '$machine_id' ORDER BY collected_at",
           "refId": "A",
           "sql": {
             "columns": [],
@@ -316,7 +316,7 @@
           "editorMode": "code",
           "format": "time_series",
           "rawQuery": true,
-          "rawSql": "SELECT collected_at AS time, disk_read_bytes AS \"Read bytes\" FROM hw_metrics WHERE $__timeFilter(collected_at) ORDER BY collected_at",
+          "rawSql": "SELECT collected_at AS time, disk_read_bytes AS \"Read bytes\" FROM hw_metrics WHERE $__timeFilter(collected_at) AND machine_id = '$machine_id' ORDER BY collected_at",
           "refId": "A",
           "sql": {
             "columns": [],
@@ -413,7 +413,7 @@
           "editorMode": "code",
           "format": "time_series",
           "rawQuery": true,
-          "rawSql": "SELECT collected_at AS time, disk_write_bytes AS \"Write bytes\" FROM hw_metrics WHERE $__timeFilter(collected_at) ORDER BY collected_at",
+          "rawSql": "SELECT collected_at AS time, disk_write_bytes AS \"Write bytes\" FROM hw_metrics WHERE $__timeFilter(collected_at) AND machine_id = '$machine_id' ORDER BY collected_at",
           "refId": "A",
           "sql": {
             "columns": [],
@@ -434,7 +434,18 @@
     "rust"
   ],
   "templating": {
-    "list": []
+    "list": [
+      {
+        "name": "machine_id",
+        "label": "Machine ID",
+        "type": "textbox",
+        "current": { "value": "" },
+        "hide": 0,
+        "options": [],
+        "query": "",
+        "skipUrlSync": false
+      }
+    ]
   },
   "time": {
     "from": "now-15m",
@@ -444,7 +455,7 @@
   "timezone": "browser",
   "title": "Hardware Watchdog",
   "uid": "hw-watchdog-v1",
-  "version": 1,
+  "version": 2,
   "weekStart": "",
   "__inputs": [
     {

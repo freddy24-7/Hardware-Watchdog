@@ -4,10 +4,6 @@ FROM rust:slim AS builder
 RUN apt-get update && apt-get install -y \
     pkg-config \
     libssl-dev \
-    libcurl4-openssl-dev \
-    cmake \
-    make \
-    g++ \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /build
@@ -26,12 +22,12 @@ COPY consumer/src consumer/src
 RUN touch consumer/src/main.rs && cargo build --release -p consumer
 
 # ── Stage 2: Runtime ──────────────────────────────────────────────────────────
-FROM ubuntu:24.04
+FROM debian:bookworm-slim
 
 RUN apt-get update && apt-get install -y \
     libssl3 \
     ca-certificates \
-    procps \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /build/target/release/consumer /usr/local/bin/consumer
