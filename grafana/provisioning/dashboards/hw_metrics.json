@@ -24,7 +24,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "${DS_HARDWARE_WATCHDOG_POSTGRESQL}"
+        "uid": "PDD7603669E4C2FB7"
       },
       "fieldConfig": {
         "defaults": {
@@ -107,7 +107,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "${DS_HARDWARE_WATCHDOG_POSTGRESQL}"
+            "uid": "PDD7603669E4C2FB7"
           },
           "editorMode": "code",
           "format": "time_series",
@@ -127,7 +127,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "${DS_HARDWARE_WATCHDOG_POSTGRESQL}"
+        "uid": "PDD7603669E4C2FB7"
       },
       "fieldConfig": {
         "defaults": {
@@ -214,7 +214,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "${DS_HARDWARE_WATCHDOG_POSTGRESQL}"
+            "uid": "PDD7603669E4C2FB7"
           },
           "editorMode": "code",
           "format": "time_series",
@@ -234,7 +234,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "${DS_HARDWARE_WATCHDOG_POSTGRESQL}"
+        "uid": "PDD7603669E4C2FB7"
       },
       "fieldConfig": {
         "defaults": {
@@ -311,7 +311,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "${DS_HARDWARE_WATCHDOG_POSTGRESQL}"
+            "uid": "PDD7603669E4C2FB7"
           },
           "editorMode": "code",
           "format": "time_series",
@@ -331,7 +331,7 @@
     {
       "datasource": {
         "type": "postgres",
-        "uid": "${DS_HARDWARE_WATCHDOG_POSTGRESQL}"
+        "uid": "PDD7603669E4C2FB7"
       },
       "fieldConfig": {
         "defaults": {
@@ -408,7 +408,7 @@
         {
           "datasource": {
             "type": "postgres",
-            "uid": "${DS_HARDWARE_WATCHDOG_POSTGRESQL}"
+            "uid": "PDD7603669E4C2FB7"
           },
           "editorMode": "code",
           "format": "time_series",
@@ -457,14 +457,5 @@
   "uid": "hw-watchdog-v1",
   "version": 2,
   "weekStart": "",
-  "__inputs": [
-    {
-      "name": "DS_HARDWARE_WATCHDOG_POSTGRESQL",
-      "label": "Hardware Watchdog PostgreSQL",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "postgres",
-      "pluginName": "PostgreSQL"
-    }
-  ]
+  "__inputs": []
 }
