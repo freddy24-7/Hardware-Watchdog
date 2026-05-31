@@ -1,7 +1,6 @@
 # Hardware Watchdog
 
-A production-grade hardware metrics pipeline built as an engineering portfolio piece.
-A Rust agent collects CPU, memory, and disk I/O every 5 seconds and sends it to a
+A production-grade hardware metrics pipeline. A Rust agent collects CPU, memory, and disk I/O every 5 seconds and sends it to a
 cloud-hosted Rust ingest service, which persists rows to PostgreSQL. Grafana visualises
 the data in real time with a per-machine dashboard.
 
