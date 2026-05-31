@@ -19,7 +19,7 @@ This detects your platform, downloads the agent binary, and prints two things:
 
 Log in to Grafana with `admin` / `watchdog2024`. Keep the agent running while you watch the dashboard update every 5 seconds.
 
-> Supports macOS (Apple Silicon) and Linux (x86_64).
+> Supports macOS (Apple Silicon and Intel) and Linux (x86_64).
 
 ---
 
