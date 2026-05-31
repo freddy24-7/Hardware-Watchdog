@@ -16,10 +16,6 @@ jobs:
             os: macos-14
             asset_name: agent-aarch64-apple-darwin
 
-          - target: x86_64-apple-darwin
-            os: macos-13
-            asset_name: agent-x86_64-apple-darwin
-
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-22.04
             asset_name: agent-x86_64-unknown-linux-gnu
@@ -91,7 +87,6 @@ jobs:
             | Platform | File |
             |---|---|
             | Mac (Apple Silicon M1/M2/M3/M4) | `agent-aarch64-apple-darwin` |
-            | Mac (Intel) | `agent-x86_64-apple-darwin` |
             | Linux (x86_64) | `agent-x86_64-unknown-linux-gnu` |
           files: artifacts/*
           fail_on_unmatched_files: true
