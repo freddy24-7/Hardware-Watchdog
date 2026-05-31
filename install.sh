@@ -18,6 +18,7 @@ case "$OS/$ARCH" in
   Linux/x86_64)  ASSET="agent-x86_64-unknown-linux-gnu" ;;
   *)
     echo "Unsupported platform: $OS/$ARCH"
+    echo "Supported: macOS Apple Silicon, macOS Intel, Linux x86_64"
     exit 1
     ;;
 esac
