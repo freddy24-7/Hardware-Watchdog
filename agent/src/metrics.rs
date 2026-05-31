@@ -13,6 +13,8 @@ pub struct MetricsSnapshot {
     /// RFC 3339 timestamp of when this snapshot was collected
     pub collected_at: String,
     pub host: String,
+    /// Stable UUID identifying this machine, generated once and persisted to disk
+    pub machine_id: String,
     /// CPU utilisation averaged across all logical cores, 0.0–100.0
     pub cpu_pct: f64,
     /// Resident memory as a percentage of total physical RAM, 0.0–100.0
@@ -26,6 +28,28 @@ pub struct MetricsSnapshot {
 pub struct Collector {
     system: System,
     host: String,
+    machine_id: String,
+}
+
+/// Returns the stable machine ID, generating and persisting it on first run.
+///
+/// Stored at ~/.hw-watchdog-id so it survives process restarts but is
+/// scoped to the current user — no root access required.
+fn load_or_create_machine_id() -> Result<String, MetricsError> {
+    let path = dirs_next::home_dir()
+        .unwrap_or_else(|| std::path::PathBuf::from("."))
+        .join(".hw-watchdog-id");
+
+    if path.exists() {
+        let id = std::fs::read_to_string(&path)?.trim().to_owned();
+        if !id.is_empty() {
+            return Ok(id);
+        }
+    }
+
+    let id = uuid::Uuid::new_v4().to_string();
+    std::fs::write(&path, &id)?;
+    Ok(id)
 }
 
 impl Collector {
@@ -48,7 +72,13 @@ impl Collector {
             .to_string_lossy()
             .into_owned();
 
-        Ok(Self { system, host })
+        let machine_id = load_or_create_machine_id()?;
+
+        Ok(Self { system, host, machine_id })
+    }
+
+    pub fn machine_id(&self) -> &str {
+        &self.machine_id
     }
 
     /// Collects a snapshot. Must be called at least twice before CPU% is meaningful
@@ -85,6 +115,7 @@ impl Collector {
         Ok(MetricsSnapshot {
             collected_at,
             host: self.host.clone(),
+            machine_id: self.machine_id.clone(),
             cpu_pct,
             memory_pct,
             disk_read_bytes,

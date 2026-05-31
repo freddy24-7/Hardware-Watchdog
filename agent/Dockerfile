@@ -1,14 +1,9 @@
 # ── Stage 1: Builder ──────────────────────────────────────────────────────────
 FROM rust:slim AS builder
 
-# Install librdkafka build dependencies (required by the rdkafka crate)
 RUN apt-get update && apt-get install -y \
     pkg-config \
     libssl-dev \
-    libcurl4-openssl-dev \
-    cmake \
-    make \
-    g++ \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /build
@@ -32,8 +27,7 @@ COPY agent/src agent/src
 RUN touch agent/src/main.rs && cargo build --release -p agent
 
 # ── Stage 2: Runtime ──────────────────────────────────────────────────────────
-# ubuntu:24.04 ships glibc 2.39 which satisfies the builder's GLIBC_2.38 requirement
-FROM ubuntu:24.04
+FROM debian:bookworm-slim
 
 RUN apt-get update && apt-get install -y \
     libssl3 \
