@@ -11,7 +11,7 @@ datasources:
     secureJsonData:
       password: "$POSTGRES_PASSWORD"
     jsonData:
-      sslmode: disable
+      sslmode: require
       maxOpenConns: 10
       maxIdleConns: 5
       connMaxLifetime: 14400
